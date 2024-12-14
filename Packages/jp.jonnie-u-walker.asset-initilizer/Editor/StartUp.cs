@@ -14,6 +14,10 @@ public class Startup
         {
             return;
         }
-        EditorApplication.delayCall += SetupWizard.Open;
+        // FBXフォルダが存在していれば実行しない
+        if (!AssetDatabase.IsValidFolder(Constants.FBXFolder))
+        {
+            EditorApplication.delayCall += SetupWizard.Open;
+        }
     }
 }

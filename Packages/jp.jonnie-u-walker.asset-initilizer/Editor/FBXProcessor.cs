@@ -39,9 +39,16 @@ public static class FBXProcessor
         ModelImporter importer = AssetImporter.GetAtPath(assetPath) as ModelImporter;
         if (importer != null)
         {
+            // カメラをインポートしない
             importer.importCameras = false;
+            // ライトをインポートしない
+            importer.importLights = false;
+            // メッシュの読み取りを許可する
             importer.isReadable = true;
+            // Animation TypeをHumanoidにする
             importer.animationType = ModelImporterAnimationType.Human;
+            // Blend Shape NormalをNoneにする
+            importer.importBlendShapeNormals = ModelImporterNormals.None;
 
             importer.SaveAndReimport();
             Debug.Log($"FBXのインポート設定を変更しました: {assetPath}");

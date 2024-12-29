@@ -1,11 +1,11 @@
 {
-  "name": "jp.jonnie-u-walker.asset-initilizer",
-  "displayName": "Assets Initilizer",
+  "name": "jp.jonnie-u.asset-initializer",
+  "displayName": "Assets Initializer",
   "version": "1.0.1",
   "unity": "2022.3",
-  "description": "Initilize Unity assets for VRChat.",
+  "description": "Initialize Unity assets for VRChat.",
   "author": {
-    "name": "Jonnie.U.Walker",
+    "name": "jonnie-u",
     "email": "jonnie-u-walker@outlook.com",
     "url": ""
   }

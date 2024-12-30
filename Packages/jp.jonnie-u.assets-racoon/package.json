@@ -1,6 +1,6 @@
 {
-  "name": "jp.jonnie-u.asset-initializer",
-  "displayName": "Assets Initializer",
+  "name": "jp.jonnie-u.assets-racoon",
+  "displayName": "Assets Racoon",
   "version": "1.0.2",
   "unity": "2022.3",
   "description": "Initialize Unity assets for VRChat.",

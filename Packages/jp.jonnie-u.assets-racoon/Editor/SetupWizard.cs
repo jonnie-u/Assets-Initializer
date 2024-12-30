@@ -10,7 +10,7 @@ public class SetupWizard : EditorWindow
     [MenuItem("Tools/Setup Wizard")]
     public static void Open()
     {
-        var window = GetWindow<SetupWizard>("Assets Initializer");
+        var window = GetWindow<SetupWizard>("Assets Racoon");
         window.minSize = new Vector2(400, 300);
         window.position = new Rect(
             (Screen.currentResolution.width - 400) / 2,
@@ -29,7 +29,7 @@ public class SetupWizard : EditorWindow
             alignment = TextAnchor.MiddleLeft,
             padding = new RectOffset(10, 0, 10, 10), // 上下左右の余白
         };
-        GUILayout.Label("Assets Initializer", titleStyle);
+        GUILayout.Label("Assets Racoon", titleStyle);
 
         GUILayout.Space(12);
 

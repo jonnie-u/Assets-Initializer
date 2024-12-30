@@ -1,4 +1,4 @@
-# Assets Initializer
+# Assets Racoon
 
 ## Japanese
 

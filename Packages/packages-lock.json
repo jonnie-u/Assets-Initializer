@@ -105,8 +105,8 @@
         "com.unity.nuget.newtonsoft-json": "3.0.2"
       }
     },
-    "jp.jonnie-u-walker.asset-initilizer": {
-      "version": "file:jp.jonnie-u-walker.asset-initilizer",
+    "jp.jonnie-u.assets-racoon": {
+      "version": "file:jp.jonnie-u.assets-racoon",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

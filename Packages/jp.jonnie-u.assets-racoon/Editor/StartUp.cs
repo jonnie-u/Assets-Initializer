@@ -1,3 +1,5 @@
+using System;
+using Unity.Android.Gradle;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,7 +12,7 @@ public class Startup
         {
             return;
         }
-        if (EditorApplication.isPlaying)
+        if (EditorApplication.isPlayingOrWillChangePlaymode)
         {
             return;
         }

@@ -10,7 +10,7 @@ public class SetupWizard : EditorWindow
     [MenuItem("Tools/Setup Wizard")]
     public static void Open()
     {
-        var window = GetWindow<SetupWizard>("Assets Racoon");
+        var window = GetWindow<SetupWizard>(Constants.ApplicationName);
         window.minSize = new Vector2(400, 300);
         window.position = new Rect(
             (Screen.currentResolution.width - 400) / 2,
@@ -29,7 +29,7 @@ public class SetupWizard : EditorWindow
             alignment = TextAnchor.MiddleLeft,
             padding = new RectOffset(10, 0, 10, 10), // 上下左右の余白
         };
-        GUILayout.Label("Assets Racoon", titleStyle);
+        GUILayout.Label(Constants.Title, titleStyle);
 
         GUILayout.Space(12);
 
@@ -62,7 +62,11 @@ public class SetupWizard : EditorWindow
         {
             if (string.IsNullOrEmpty(selectedFBXPath) || string.IsNullOrEmpty(selectedTexturePath))
             {
-                EditorUtility.DisplayDialog("Error", Constants.ErrorNoFBXPath, "OK");
+                EditorUtility.DisplayDialog(
+                    Constants.ErrorTitle,
+                    Constants.ErrorNoFBXPath,
+                    Constants.OK
+                );
             }
             else
             {

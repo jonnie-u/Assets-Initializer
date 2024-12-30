@@ -10,8 +10,7 @@ public static class TextureProcessor
     /// <param name="folderPath">テクスチャのフォルダパス</param>
     public static void Process(string folderPath)
     {
-        string destinationPath = "Assets/Textures";
-        if (!AssetDatabase.IsValidFolder(destinationPath))
+        if (!AssetDatabase.IsValidFolder(Constants.TexturesFolder))
         {
             AssetDatabase.CreateFolder("Assets", "Textures");
         }
@@ -25,7 +24,8 @@ public static class TextureProcessor
             if (System.Array.Exists(allowedExtensions, ext => ext == extension))
             {
                 string fileName = Path.GetFileName(file);
-                string destinationFile = Path.Combine(destinationPath, fileName).Replace("\\", "/");
+                string destinationFile = Path.Combine(Constants.TexturesFolder, fileName)
+                    .Replace("\\", "/");
 
                 try
                 {
